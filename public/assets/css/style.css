@@ -1,0 +1,59 @@
+
+body, html {
+    height: 100%;
+  }
+body {
+    background-image: url("https://lh3.googleusercontent.com/proxy/gGzQlEEzOx8ulmHi1SqaGqe3PxMw-0jckCFuRS5vOuxgbr8HBTfGrgtPSTkjjkr6gZ1JGbUDbblBo4uxQMG4--w");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    text-align: center;
+    font-size: 80px;
+    background-color: lightblue;
+    
+}
+
+.burgers {
+
+    float: left;
+    margin-right: 20px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.createBurger {
+    clear: both;
+}
+.burgers-title {
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-of-burgers {
+
+    list-style-type: none;
+    width: 400px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+
+}
+.list-of-eaten-burgers {
+
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: rgb(82, 80, 80);
+
+}
+.createBurger {
+
+    text-align: center;
+    
+}
+
+
