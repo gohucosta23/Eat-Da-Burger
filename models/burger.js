@@ -16,6 +16,11 @@ const burger = {
         orm.updateOne("burgers", burgerId, function(res){
             cb(res);
         });
+    },
+    deleteBurger: function(burgerId, cb){
+        orm.deleteBurger("burgers", burgerId, function(res){
+            cb(res);
+        });
     }
 }
 

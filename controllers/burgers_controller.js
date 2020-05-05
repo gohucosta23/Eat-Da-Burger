@@ -18,7 +18,7 @@ router.get("/", function(req, res){
 router.post("/api/burgers", function(req, res){
 
     const burgerName = req.body.burger
-    console.log(burgerName);
+   
     burger.insertOne(burgerName, function(result){
        
         res.json( {id : result.insertId} );
@@ -40,6 +40,23 @@ router.put("/api/burgers/:id", function(req, res){
             res.status(200).end();
         }
         
+    });
+});
+
+router.delete("/api/burgers/:id", function(req, res){
+    
+    const burgerId = req.params.id;
+    
+    burger.deleteBurger(burgerId, function(result){
+
+        if(res.affectedRows === 0){
+
+            res.status(404).end();
+        }
+        else {
+            
+            res.status(200).end();
+        }
     });
 });
 

@@ -2,18 +2,21 @@
 body, html {
     height: 100%;
   }
+
 body {
     background-image: url("https://lh3.googleusercontent.com/proxy/gGzQlEEzOx8ulmHi1SqaGqe3PxMw-0jckCFuRS5vOuxgbr8HBTfGrgtPSTkjjkr6gZ1JGbUDbblBo4uxQMG4--w");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: auto;
 }
 
 #title {
     text-align: center;
     font-size: 80px;
-    background-color: lightblue;
+    background-color: rgb(250, 229, 111);
+    border: orange 2px groove;
     
 }
 
@@ -22,7 +25,6 @@ body {
     float: left;
     margin-right: 20px;
     width: 500px;
-    text-align: center;
     margin-bottom: 50px;
 
 }
@@ -32,7 +34,11 @@ body {
 .burgers-title {
 
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 30px;
+    border: orange 2px groove;
+    border-radius: 10px;
+    box-shadow: yellow 5px 5px 5px;
 }
 
 .list-of-burgers {
@@ -43,11 +49,19 @@ body {
     font-weight: bolder;
 
 }
+#devourBtn, #deleteBtn{
+    
+    float: right;
+    
+}
+
 .list-of-eaten-burgers {
 
     list-style-type: none;
+    height: 30px;
     margin-bottom: 10px;
     color: rgb(82, 80, 80);
+    background-color: lightgray;
 
 }
 .createBurger {
@@ -55,5 +69,8 @@ body {
     text-align: center;
     
 }
+#submit {
+    padding: 10px 30px;
+    font-weight: bolder;
 
 

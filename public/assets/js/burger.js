@@ -1,17 +1,32 @@
 
 
-    $(".burger").on("click", function(){
+    $(".devourBtn").on("click", function(){
 
         const id = $(this).data("id");
 
         $.ajax("/api/burgers/" + id, {
-            type : "PUT",
+            type : "PUT"
 
         }).then(function(response){
           
             location.reload();
         });
         
+    });
+
+    $(".deleteBtn").on("click", function(){
+
+        const id = $(this).data("id");
+        
+        $.ajax("/api/burgers/" + id, {
+
+            type : "DELETE"
+            
+        }).then(function(response){
+           
+            location.reload();
+        });
+
     });
 
     $("#submit").on("click", function(event){
