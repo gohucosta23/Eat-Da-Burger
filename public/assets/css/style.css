@@ -2,9 +2,13 @@
 body, html {
     height: 100%;
   }
+#burgerPic {
+
+    border-radius: 80px;
+}
 
 body {
-    background-image: url("https://lh3.googleusercontent.com/proxy/gGzQlEEzOx8ulmHi1SqaGqe3PxMw-0jckCFuRS5vOuxgbr8HBTfGrgtPSTkjjkr6gZ1JGbUDbblBo4uxQMG4--w");
+    background-image: url("../images/burgerBack.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
