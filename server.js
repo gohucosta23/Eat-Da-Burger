@@ -16,6 +16,12 @@ app.set("view engine", "handlebars");
 const routes = require("./controllers/burgers_controller.js");
 app.use(routes);
 
+var syncOptions = { force: false };
+
+if (process.env.NODE_ENV === "test") {
+    syncOptions.force = true;
+  }
+
 app.listen(PORT, function(err){
 
     if(err) throw err;
