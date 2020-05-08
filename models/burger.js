@@ -8,17 +8,17 @@ const burger = {
         });
     },
     insertOne: function(burgerName, cb){
-        orm.insertOne("burgers", burgerName, function(res){
+        orm.insertOne("burgers", "burger_name", burgerName, function(res){
             cb(res);
         });
     },
     updateOne: function(burgerId, cb){
-        orm.updateOne("burgers", burgerId, function(res){
+        orm.updateOne("burgers", "devoured", true, "id", burgerId, function(res){
             cb(res);
         });
     },
     deleteBurger: function(burgerId, cb){
-        orm.deleteBurger("burgers", burgerId, function(res){
+        orm.deleteBurger("burgers", "id", burgerId, function(res){
             cb(res);
         });
     }
