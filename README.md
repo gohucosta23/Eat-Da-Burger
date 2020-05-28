@@ -37,5 +37,5 @@
 
 ## Questions
 <br>
-<p>Check out the app <a href = "https://stormy-taiga-53566.herokuapp.com/" target = "blank">here...</a>
+<p>Check out the app <a href = "https://stormy-taiga-53566.herokuapp.com/" target = "blank">here...</a><br>
 <a href = "mailto:gohucosta23@hotmail.com">gohucosta23@hotmail.com</a> 
